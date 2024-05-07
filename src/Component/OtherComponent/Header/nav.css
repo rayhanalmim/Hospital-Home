@@ -1,0 +1,10 @@
+.active{
+    background: none !important;
+    color: whitesmoke !important;
+    border-radius: 0px;
+}
+li{
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: 600;
+}
