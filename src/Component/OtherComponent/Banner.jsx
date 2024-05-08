@@ -1,4 +1,4 @@
-
+import { FaUserDoctor } from "react-icons/fa6";
 
 const Banner = () => {
     return (
@@ -54,7 +54,27 @@ const Banner = () => {
             <div>
                 <div className="grid grid-cols-7 gap-1">
                     <div className="col-span-2">
-
+                        <div>
+                            <div>
+                                <FaUserDoctor className='text-4xl'></FaUserDoctor>
+                            </div>
+                            <div>
+                                <h3>Select Area</h3>
+                                <div className="space-y-1 text-sm w-full lg:w-1/2">
+                                    <label className="block dark-text-gray-400">Light Color</label>
+                                    <select
+                                        className="text-gray-900 w-full px-4 py-3 rounded-md dark-border-gray-700 focus:dark-border-violet-400"
+                                    >
+                                        <option value="">Select Light Color</option>
+                                        <option value="Daylight">Daylight</option>
+                                        <option value="Warm">Warm</option>
+                                        <option value="Green">Green</option>
+                                        <option value="Blue">Blue</option>
+                                        <option value="Red">Red</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-span-2">
 
@@ -63,7 +83,7 @@ const Banner = () => {
 
                     </div>
                     <div className="col-span-1">
-                        
+
                     </div>
                 </div>
             </div>
