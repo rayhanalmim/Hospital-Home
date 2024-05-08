@@ -2,6 +2,10 @@ import { FaLocationDot } from "react-icons/fa6";
 const Services = () => {
     return (
         <div className="bg-gradient-to-t from-cyan-200 pb-14">
+
+<div className="pb-10">
+                <h3 className="font-extrabold text-center  text-5xl">Meet Our Specialist</h3>
+            </div>
             <div className="grid grid-cols-4 justify-items-center gap-5 px-16">
                 <div className="card bg-base-100 shadow-xl">
                     <figure className="bg-cyan-100"><img className="h-72 w-80 object-cover" src="https://i.ibb.co/WsdhH9K/pngwing-com-6.png" alt="Shoes" /></figure>
@@ -55,9 +59,7 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className="pt-10">
-                <h3 className="font-extrabold text-center  text-5xl">Meet Our Specialist</h3>
-            </div>
+           
         </div>
     );
 };
