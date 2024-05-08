@@ -1,3 +1,4 @@
+import Faqsections from "../FAQ/Faqsections";
 import Banner from "../OtherComponent/Banner";
 import NavBar from "../OtherComponent/Header/NavBar";
 import SearchBar from "../OtherComponent/SearchBar";
@@ -17,6 +18,9 @@ const Home = () => {
             </div>
             <div>
                 <Services></Services>
+            </div>
+            <div className="bg-gradient-to-b from-cyan-200 pb-14">
+                <Faqsections></Faqsections>
             </div>
             <div>
                 <Footer></Footer>
