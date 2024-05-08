@@ -47,6 +47,7 @@ const SearchBar = () => {
                                         <option value="Cardiothoracic ">Cardiothoracic </option>
                                         <option value="Dermatologist">Dermatologist</option>
                                         <option value="Endocrinologist">Endocrinologist</option>
+                                        <option value="Endocrinologist">Neurologist</option>
                                     </select>
                                 </div>
                             </div>
