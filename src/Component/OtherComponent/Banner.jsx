@@ -1,10 +1,9 @@
-import { FaUserDoctor } from "react-icons/fa6";
-import { IoSearch } from "react-icons/io5";
+
 
 const Banner = () => {
     return (
-        <div className="">
-            <div className="bg-[url('https://i.ibb.co/q7kthwH/Seek-Png-com-technology-background-png-682869.png')] bg-cover bg-center h-[600px] w-full rounded mb-4">
+        <div className="relative">
+            <div className="bg-[url('https://i.ibb.co/q7kthwH/Seek-Png-com-technology-background-png-682869.png')] bg-cover bg-center h-[600px] w-full rounded mb-4 ">
                 <div className="grid grid-flow-col md:grid-flow-row grid-cols-2 gap-3 pt-24">
                     <div className="flex justify-center pt-16 pl-32">
                         <div>
@@ -52,83 +51,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <div className="px-28 py-6">
-                <div className="grid grid-cols-7 gap-1 p-2">
-                    <div className="w-full col-span-2">
-                        <div className="flex justify-center gap-2">
-                            <div className="flex justify-center items-center">
-                                <FaUserDoctor className='text-4xl text-cyan-800'></FaUserDoctor>
-                            </div>
-                            <div>
-                                <div className="space-y-1 text-sm w-full">
-                                    <label className="block dark-text-gray-400">Select Area</label>
-                                    <select
-                                        className="text-gray-900 w-full px-4 py-3 rounded-md dark-border-gray-700 focus:dark-border-violet-400"
-                                    >
-                                        <option value="">Select Light Color</option>
-                                        <option value="Daylight">Daylight</option>
-                                        <option value="Warm">Warm</option>
-                                        <option value="Green">Green</option>
-                                        <option value="Blue">Blue</option>
-                                        <option value="Red">Red</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-span-2">
-                        <div className="flex justify-center gap-2">
-                            <div className="flex justify-center items-center">
-                                <FaUserDoctor className='text-4xl text-cyan-800'></FaUserDoctor>
-                            </div>
-                            <div>
-                                <div className="space-y-1 text-sm w-full">
-                                    <label className="block dark-text-gray-400">Select Area</label>
-                                    <select
-                                        className="text-gray-900 w-full px-4 py-3 rounded-md dark-border-gray-700 focus:dark-border-violet-400"
-                                    >
-                                        <option value="">Select Light Color</option>
-                                        <option value="Daylight">Daylight</option>
-                                        <option value="Warm">Warm</option>
-                                        <option value="Green">Green</option>
-                                        <option value="Blue">Blue</option>
-                                        <option value="Red">Red</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-span-2">
-                        <div className="flex justify-center gap-2">
-                            <div className="flex justify-center items-center">
-                                <FaUserDoctor className='text-4xl text-cyan-800'></FaUserDoctor>
-                            </div>
-                            <div>
-                                <div className="space-y-1 text-sm w-full">
-                                    <label className="block dark-text-gray-400">Select Area</label>
-                                    <select
-                                        className="text-gray-900 w-full px-4 py-3 rounded-md dark-border-gray-700 focus:dark-border-violet-400"
-                                    >
-                                        <option value="">Select Light Color</option>
-                                        <option value="Daylight">Daylight</option>
-                                        <option value="Warm">Warm</option>
-                                        <option value="Green">Green</option>
-                                        <option value="Blue">Blue</option>
-                                        <option value="Red">Red</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-span-1">
-                        <div className="col-span-2">
-                            <div className=" w-20 h-16 flex justify-center items-center">
-                                <IoSearch className="text-5xl p-2 rounded-md bg-cyan-800 text-white"></IoSearch>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     );
 };
