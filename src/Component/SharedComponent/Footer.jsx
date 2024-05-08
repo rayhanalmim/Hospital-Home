@@ -1,34 +1,79 @@
+import { FaEnvelope, FaLocationPin, FaPhone } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
-    return (
-        <div>
-            <footer className="footer p-10 bg-base-200 text-base-content">
-                <aside>
-                    <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" className="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
-                    <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
-                </aside>
-                <nav>
-                    <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
-                </nav>
-                <nav>
-                    <h6 className="footer-title">Company</h6>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
-                </nav>
-                <nav>
-                    <h6 className="footer-title">Legal</h6>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
-                </nav>
-            </footer>
-        </div>
-    );
+  return (
+    <footer className=" bg-light-teal p-4 pt-10 md:p-10">
+      <div className="container mx-auto relative grid md:grid-cols-2 lg:grid-cols-4 bottom-0 p-4 md:p-10">
+        <nav className="w-full">
+          <header className="flex gap-2 items-center">
+            <img loading="lazy" src='https://i.ibb.co/kyg59Y0/pngegg.png' alt="img" className="w-8 h-8" />
+            <p className="text-primary-black text-2xl font-bold">HealthCare</p>
+          </header>
+          <div className="text-primary-black font-medium ">
+            <p className="font-semibold text-lg mt-5">Our Info</p>
+            <div className="">
+              <p className="flex items-center gap-2">
+                <FaLocationPin className="text-primary-teal" />
+                <span>House 9, Road 15, Uttara, Dhaka</span>
+              </p>
+              <p className="flex items-center gap-2">
+                <FaPhone className="text-primary-teal" />
+                <a href="tel:+88011111111">Call Us: +88011111111</a>
+              </p>
+              <p className="flex items-center gap-2">
+                <FaEnvelope className="text-primary-teal" />
+                <a href="mailto:mail.techtitan@gmail.com">mail.techtitan@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </nav>
+        <nav className="w-full text-primary-black md:w-1/2">
+          <header className="text-primary-black mt-3 lg:mt-0 text-lg font-bold">Latest Events</header>
+          <div>
+            <a href="/tips" className="link link-hover font-medium">Decade of Action on Nutrition and Global Initiatives</a>
+            <p className="text-teal-600 mb-3">27 May, 2023</p>
+          </div>
+          <div>
+            <a href="/tips" className="link link-hover font-medium">Standards and Scientific Advice on Food and Nutrition</a>
+            <p className="text-teal-600 mb-3">27 May, 2023</p>
+          </div>
+        </nav>
+        <nav className="w-full text-primary-black font-medium">
+          <header className="text-primary-black text-lg font-bold">Useful Link</header>
+          <div className="flex flex-col gap-1 mt-1">
+            <a href="/aboutUs" className="link link-hover">About Company</a>
+            <a href="/services" className="link link-hover">Services</a>
+            <a href="/appointment" className="link link-hover">Take Appointment</a>
+            <a href="/tips" className="link link-hover">Doctor Tips</a>
+            <Link to="/contact" className="link link-hover">Contact us</Link>
+            <a href="/team" className="link link-hover">Our Team</a>
+          </div>
+        </nav>
+        <form  className="w-full">
+          <header className="text-primary-black text-lg font-bold">Subscribe</header>
+          <fieldset className="form-control w-full font-medium">
+            <label className="label mt-1">
+              <span className="label-text text-primary-black ">
+                Enter your email address
+              </span>
+            </label>
+            <div className="relative mt-5">
+              <input
+                type="email"
+                name="email"
+                placeholder="abc@gmail.com"
+                className="p-3 rounded-full shadow-md text-primary-black w-full pr-16"
+              />
+              <button className="h-full text-white rounded-r-full px-2 bg-teal-400 hover:bg-teal-300 absolute top-0 right-0 rounded-l-none">
+                Subscribe
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
