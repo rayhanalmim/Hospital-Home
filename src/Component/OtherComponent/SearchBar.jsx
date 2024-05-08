@@ -24,7 +24,6 @@ const SearchBar = () => {
                                         <option value="Dhanmondi">Dhanmondi</option>
                                         <option value="Mirpur">Mirpur</option>
                                         <option value="Savar">Savar</option>
-                                        <option value="Uttara">Uttara</option>
                                     </select>
                                 </div>
                             </div>
@@ -44,9 +43,7 @@ const SearchBar = () => {
                                         <option value="">Select Specialist</option>
                                         <option value="Anesthesiologist">Anesthesiologist</option>
                                         <option value="Cardiologist">Cardiologist</option>
-                                        <option value="Cardiothoracic ">Cardiothoracic </option>
                                         <option value="Dermatologist">Dermatologist</option>
-                                        <option value="Endocrinologist">Endocrinologist</option>
                                         <option value="Endocrinologist">Neurologist</option>
                                     </select>
                                 </div>
@@ -69,6 +66,7 @@ const SearchBar = () => {
                                         <option value="United Hospital">United Hospital</option>
                                         <option value="Ibn Sina Hospital">Ibn Sina Hospital</option>
                                         <option value="Evercare Hospital">Evercare Hospital</option>
+                                        <option value="Evercare Hospital">Central Hospital</option>
                                     </select>
                                 </div>
                             </div>
