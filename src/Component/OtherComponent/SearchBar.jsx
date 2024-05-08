@@ -74,8 +74,8 @@ const SearchBar = () => {
                     </div>
                     <div className="col-span-1">
                         <div className="col-span-2">
-                            <div className=" w-20 h-16 flex justify-center items-center">
-                                <IoSearch className="text-5xl p-2 rounded-md bg-cyan-800 text-white"></IoSearch>
+                            <div className=" w-20 h-16 flex justify-center items-center ">
+                                <IoSearch className="text-5xl p-2 cursor-pointer rounded-md bg-cyan-800 text-white"></IoSearch>
                             </div>
                         </div>
                     </div>

@@ -7,8 +7,10 @@ const Home = () => {
     return (
         <div className="bg-slate-100">
             <NavBar></NavBar>
+            <div className="">
             <Banner></Banner>
-            <div className="mx-10">
+            </div>
+            <div className="mx-16">
             <SearchBar></SearchBar>
             </div>
         </div>
