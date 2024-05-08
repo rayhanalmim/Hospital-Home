@@ -4,7 +4,7 @@ import NavBar from "../OtherComponent/Header/NavBar";
 
 const Home = () => {
     return (
-        <div>
+        <div className="bg-slate-100">
             <NavBar></NavBar>
             <Banner></Banner>
         </div>
