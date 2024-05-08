@@ -3,7 +3,7 @@
 const Banner = () => {
     return (
         <div className="relative">
-            <div className="bg-[url('https://i.ibb.co/q7kthwH/Seek-Png-com-technology-background-png-682869.png')] bg-cover bg-center h-[500px] w-full rounded mb-4 ">
+            <div className="bg-[url('https://i.ibb.co/q7kthwH/Seek-Png-com-technology-background-png-682869.png')] bg-cover bg-center h-[600px] w-full rounded mb-4 ">
                 <div className="grid grid-flow-col md:grid-flow-row grid-cols-2 gap-3 pt-24">
                     <div className="flex justify-center pt-16 pl-32">
                         <div>
