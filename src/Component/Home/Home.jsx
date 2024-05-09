@@ -5,6 +5,7 @@ import NavBar from "../OtherComponent/Header/NavBar";
 import SearchBar from "../OtherComponent/SearchBar";
 import Services from "../OtherComponent/Services";
 import Footer from "../SharedComponent/Footer";
+import LabFacility from "../OtherComponent/LabFacility";
 
 const Home = () => {
     const [filters, setFilters] = useState({}); 
@@ -24,6 +25,9 @@ const Home = () => {
             </div>
             <div>
                 <Services filters={filters} />
+            </div>
+            <div>
+                <LabFacility></LabFacility>
             </div>
             <div className="bg-gradient-to-b from-cyan-200 pb-14">
                 <Faqsections />

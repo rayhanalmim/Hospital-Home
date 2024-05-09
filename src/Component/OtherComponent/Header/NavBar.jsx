@@ -34,8 +34,8 @@ const NavBar = ({ bannerS, aboutS, skillS, projectS, constractS, scrollHandeler 
       {/* Use NavLink to apply active styles when a link is active */}
       <li><Link onClick={() => scrollHandeler(bannerS)} className={navbarTextColor}>Home</Link></li>
       <li><Link onClick={() => scrollHandeler(aboutS)} className={navbarTextColor}>About</Link></li>
-      <li><Link onClick={() => scrollHandeler(skillS)} className={navbarTextColor}>Skill</Link></li>
-      <li><Link onClick={() => scrollHandeler(projectS)} className={navbarTextColor}>Feature Project</Link></li>
+      <li><Link onClick={() => scrollHandeler(skillS)} className={navbarTextColor}>Statistics</Link></li>
+      <li><Link onClick={() => scrollHandeler(projectS)} className={navbarTextColor}>FAQ</Link></li>
       <li><Link onClick={() => scrollHandeler(constractS)} className={navbarTextColor}>Contact</Link></li>
     </>
   );

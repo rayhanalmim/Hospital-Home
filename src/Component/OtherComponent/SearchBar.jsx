@@ -3,6 +3,7 @@ import { FaUserDoctor, FaBriefcaseMedical, FaHospital } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 
 const SearchBar = ({ onSearch }) => {
+    
     const [filters, setFilters] = useState({
         hospital_area: "",
         designation: "",
@@ -89,7 +90,7 @@ const SearchBar = ({ onSearch }) => {
                     <div className="w-20 h-16 flex mx-auto justify-center pt-1">
                         <IoSearch
                             className="text-5xl p-2 cursor-pointer rounded-md bg-cyan-800 text-white"
-                            onClick={handleSearch} // Call the callback on search
+                            onClick={handleSearch}
                         />
                     </div>
                 </div>
