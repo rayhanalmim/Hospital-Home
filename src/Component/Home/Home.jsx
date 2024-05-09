@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Faqsections from "../FAQ/Faqsections";
 import Banner from "../OtherComponent/Banner";
 import NavBar from "../OtherComponent/Header/NavBar";
@@ -8,31 +8,44 @@ import Footer from "../SharedComponent/Footer";
 import LabFacility from "../OtherComponent/LabFacility";
 
 const Home = () => {
-    const [filters, setFilters] = useState({}); 
+
+    const bannerS = useRef();
+    const aboutS = useRef();
+    const statisticS = useRef();
+    const FAQS = useRef();
+    const constractS = useRef();
+
+    const scrollHandeler = (elRef) => {
+        console.log(elRef)
+        window.scrollTo({ top: elRef.current.offsetTop, behavior: 'smooth' })
+    }
+
+    const [filters, setFilters] = useState({});
 
     const handleSearch = (newFilters) => {
-        setFilters(newFilters); 
+        setFilters(newFilters);
     };
 
     return (
         <div className="bg-slate-100 relative">
-            <NavBar />
-            <div className="">
+            <NavBar scrollHandeler={scrollHandeler} bannerS={bannerS} aboutS={aboutS} statisticS={statisticS} FAQS={FAQS} constractS={constractS}></NavBar>
+
+            <div ref={bannerS} className="">
                 <Banner />
             </div>
             <div className="mx-16 relative pb-0 -top-20">
-                <SearchBar onSearch={handleSearch} /> 
+                <SearchBar onSearch={handleSearch} />
             </div>
-            <div>
+            <div ref={aboutS}>
                 <Services filters={filters} />
             </div>
-            <div>
+            <div ref={statisticS}>
                 <LabFacility></LabFacility>
             </div>
-            <div className="bg-gradient-to-b from-cyan-200 pb-14">
+            <div ref={FAQS} className="bg-gradient-to-b from-cyan-200 pb-14">
                 <Faqsections />
             </div>
-            <div>
+            <div ref={constractS}>
                 <Footer />
             </div>
         </div>

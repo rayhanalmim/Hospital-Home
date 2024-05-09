@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
 // Create a React component with state variables for scroll-based color changes
-const NavBar = ({ bannerS, aboutS, skillS, projectS, constractS, scrollHandeler }) => {
+const NavBar = ({ bannerS, aboutS, statisticS, FAQS, constractS, scrollHandeler }) => {
   const [navbarColor, setNavbarColor] = useState('bg-transparent'); // Background color of navbar
   const [navbarTextColor, setNavbarTextColor] = useState('text-black'); // Text color of navbar
   const [navbarShadow, setNavbarShadow] = useState(''); // To add shadow when scrolled
@@ -34,8 +34,8 @@ const NavBar = ({ bannerS, aboutS, skillS, projectS, constractS, scrollHandeler 
       {/* Use NavLink to apply active styles when a link is active */}
       <li><Link onClick={() => scrollHandeler(bannerS)} className={navbarTextColor}>Home</Link></li>
       <li><Link onClick={() => scrollHandeler(aboutS)} className={navbarTextColor}>About</Link></li>
-      <li><Link onClick={() => scrollHandeler(skillS)} className={navbarTextColor}>Statistics</Link></li>
-      <li><Link onClick={() => scrollHandeler(projectS)} className={navbarTextColor}>FAQ</Link></li>
+      <li><Link onClick={() => scrollHandeler(statisticS)} className={navbarTextColor}>Statistics</Link></li>
+      <li><Link onClick={() => scrollHandeler(FAQS)} className={navbarTextColor}>FAQ</Link></li>
       <li><Link onClick={() => scrollHandeler(constractS)} className={navbarTextColor}>Contact</Link></li>
     </>
   );
