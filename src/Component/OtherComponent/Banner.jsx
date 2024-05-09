@@ -4,11 +4,11 @@ const Banner = () => {
     return (
         <div className="relative">
             <div className="bg-[url('https://i.ibb.co/q7kthwH/Seek-Png-com-technology-background-png-682869.png')] bg-cover bg-center h-[600px] w-full rounded mb-4 ">
-                <div className="grid grid-flow-col md:grid-flow-row grid-cols-2 gap-3 pt-24">
-                    <div className="flex justify-center pt-16 pl-32">
+                <div className="flex flex-col md:flex-row gap-3 pt-24">
+                    <div className=" flex justify-center w-full md:w-1/2 pt-5 md:pt-16 pl-5 md:pl-32">
                         <div>
                             <div className="bg-cyan-800 flex justify-center items-center w-40 py-1 rounded-sm">
-                                <h3 data-aos="fade-right" className="text-white text-3xl  tracking-wide pt-0">Experience</h3>
+                                <h3  className="text-white text-3xl  tracking-wide pt-0">Experience</h3>
                             </div>
 
                             <div>
@@ -19,9 +19,10 @@ const Banner = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="h-96 w-96 flex justify-center items-center ml-32 relative">
+                    <div className="flex justify-center">
+                    <div className="h-52 w-52 md:h-96 md:w-96 flex justify-center items-center ml-0 md:ml-32 relative">
                         <img className="z-10" src="https://i.ibb.co/vPjdrpZ/pngegg-1.png" alt="" />
-                        <div>
+                        <div className="">
                             <div className="stats shadow absolute top-0 z-0 -right-32">
 
                                 <div className="stat ">
@@ -48,6 +49,7 @@ const Banner = () => {
 
                             </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
