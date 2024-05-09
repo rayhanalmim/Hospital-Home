@@ -24,7 +24,7 @@ const ImageSections = () => {
               loading="lazy"
               src="https://i.ibb.co/RhkTZpz/faq-1.jpg"
               alt=""
-              className="md:relative md:ml-56 mt-5 z-10 animate-flooding3 w-64 rounded-3xl border-4 shadow-2xl border-x-white"
+              className="md:relative md:ml-56 mt-5 z-10 animate-flooding3 z-10 w-64 rounded-3xl border-4 shadow-2xl border-x-white"
             />
           </div>
         </div>
@@ -34,7 +34,7 @@ const ImageSections = () => {
         loading="lazy"
         src="https://i.ibb.co/bFdGG97/shape-27.png"
         alt=""
-        className="md:-mt-24 -mt-24 ml-5 animate-spin md:ml-72"
+        className="md:-mt-24 z-0 -mt-24 ml-5 animate-spin md:ml-72"
       />
     </div>
   );

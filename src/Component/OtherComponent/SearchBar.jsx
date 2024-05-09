@@ -25,7 +25,7 @@ const SearchBar = ({ onSearch }) => {
 
     return (
         <div className="w-full">
-            <div className="grid grid-cols-4 md:grid-cols-7 gap-5 md:gap-2 py-3 pt-6 bg-white rounded-lg shadow-2xl">
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-5 md:gap-2 py-3 pt-6 px-0 md:px-2 lg:px-0 bg-white rounded-lg shadow-2xl">
                 <div className="w-full col-span-2 border-r-2 border-gray-400">
                     <div className="flex justify-center items-center gap-2">
                         <FaUserDoctor className="text-4xl text-cyan-800" />

@@ -6,7 +6,7 @@ import ImageSections from "./ImageSections";
 const Faqsections = () => {
     return (
         <div className="container mx-auto mb-7">
-            <div className="flex-1 xl:flex  justify-around items-center mx-5 ">
+            <div className="flex-1 lg:flex  justify-around items-center mx-5 ">
                 {/* fa que section */}
                 <div>
                     <Title title="FAQ’S"></Title>

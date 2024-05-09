@@ -3,9 +3,9 @@
 const Banner = () => {
     return (
         <div className="relative">
-            <div className="bg-[url('https://i.ibb.co/q7kthwH/Seek-Png-com-technology-background-png-682869.png')] bg-cover bg-center h-[600px] w-full rounded mb-4 ">
-                <div className="flex flex-col md:flex-row gap-3 pt-24">
-                    <div className=" flex justify-center w-full md:w-1/2 pt-5 md:pt-16 pl-5 md:pl-32">
+            <div className="bg-[url('https://i.ibb.co/q7kthwH/Seek-Png-com-technology-background-png-682869.png')] bg-cover bg-center h-[600px] md:h-[400px] lg:h-[600px] w-full rounded mb-4 ">
+                <div className="flex flex-col md:flex-row gap-3 pt-10 lg:pt-24">
+                    <div className=" flex justify-center w-full xl:w-1/2 pt-12 md:pt-10 lg:pt-10 xl:pt-16 pl-5 lg:pl-10 xl:pl-32">
                         <div>
                             <div className="bg-cyan-800 flex justify-center items-center w-40 py-1 rounded-sm">
                                 <h3  className="text-white text-3xl  tracking-wide pt-0">Experience</h3>
@@ -20,7 +20,7 @@ const Banner = () => {
                         </div>
                     </div>
                     <div className="flex justify-center">
-                    <div className="h-52 w-52 md:h-96 md:w-96 flex justify-center items-center ml-0 md:ml-32 relative">
+                    <div className="h-52 w-52 md:h-64 md:w-64 lg:h-96 lg:w-96 flex justify-center items-center ml-0 md:ml-32 relative">
                         <img className="z-10" src="https://i.ibb.co/vPjdrpZ/pngegg-1.png" alt="" />
                         <div className="">
                             <div className="stats shadow absolute top-0 z-0 -right-32">
