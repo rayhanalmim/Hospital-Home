@@ -25,7 +25,7 @@ const SearchBar = ({ onSearch }) => {
 
     return (
         <div className="w-full">
-            <div className="grid grid-cols-7 gap-1 py-3 pt-6 bg-white rounded-lg shadow-2xl">
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-5 md:gap-2 py-3 pt-6 bg-white rounded-lg shadow-2xl">
                 <div className="w-full col-span-2 border-r-2 border-gray-400">
                     <div className="flex justify-center items-center gap-2">
                         <FaUserDoctor className="text-4xl text-cyan-800" />
@@ -53,7 +53,7 @@ const SearchBar = ({ onSearch }) => {
                             <div className="space-y-1 text-sm w-full">
                                 <label className="block dark-text-gray-400 pl-5 tracking-wide font-semibold">Specialist</label>
                                 <select
-                                    className="text-gray-900 w-full font-bold px-4 py-1 rounded-md"
+                                    className="text-gray-900 w-full font-bold px-1 md:px-4 py-1 rounded-md"
                                     onChange={(e) => handleFilterChange("designation", e.target.value)}
                                 >
                                     <option value="">Select Specialist</option>
@@ -73,7 +73,7 @@ const SearchBar = ({ onSearch }) => {
                             <div className="space-y-1 text-sm w-full">
                                 <label className="block dark-text-gray-400 pl-5 tracking-wide font-semibold">Hospital</label>
                                 <select
-                                    className="text-gray-900 font-bold w-full px-4 py-1 rounded-md"
+                                    className="text-gray-900 font-bold w-full px-0 md:px-4 py-1 rounded-md"
                                     onChange={(e) => handleFilterChange("hospital_name", e.target.value)}
                                 >
                                     <option value="">Select Hospital</option>
@@ -87,7 +87,7 @@ const SearchBar = ({ onSearch }) => {
                     </div>
                 </div>
                 <div className="col-span-1">
-                    <div className="w-20 h-16 flex mx-auto justify-center pt-1">
+                    <div className="w-16 h-14 md:w-20 md:h-16 flex mx-auto justify-center pt-1">
                         <IoSearch
                             className="text-5xl p-2 cursor-pointer rounded-md bg-cyan-800 text-white"
                             onClick={handleSearch}

@@ -33,7 +33,7 @@ const Home = () => {
             <div ref={bannerS} className="">
                 <Banner />
             </div>
-            <div className="mx-16 relative pb-0 -top-20">
+            <div className="mx-1 md:mx-16 pt-6 md:pt-0 relative pb-0 -top-20">
                 <SearchBar onSearch={handleSearch} />
             </div>
             <div ref={aboutS}>
