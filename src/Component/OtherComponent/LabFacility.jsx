@@ -8,7 +8,7 @@ import CustomTitle from "../SharedComponent/Title/CustomTitle";
 const LabFacility = () => {
 
   return (
-    <div className=" bg-cyan-200 text-gray-900 font-barlow w-full bg-cover bg-no-repeat bg-inherit bg-center relative">
+    <div className=" bg-cyan-200 text-gray-900 font-barlow w-full bg-cover bg-no-repeat  bg-center relative">
         <div className='w-full bg-dark-blue bg-opacity-90 bg-cover'>
             <div className=" py-6 md:py-20 px-2 container mx-auto">
                 <div className="flex flex-col items-center text-center justify-center">
