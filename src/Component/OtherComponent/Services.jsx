@@ -1,9 +1,23 @@
 import { FaLocationDot } from "react-icons/fa6";
+import useAxiosPublic from "../../Hook/useAxiosPublic";
+import { useQuery } from "@tanstack/react-query";
+
 const Services = () => {
+    const axiosPublic = useAxiosPublic();
+
+    const { data: docData = [], isLoading } = useQuery({
+        queryKey: ["docData"],
+        queryFn: async () => {
+            const res = await axiosPublic.get(`/getDocData`)
+            return res.data;
+        }
+    })
+    console.log(docData);
+
     return (
         <div className="bg-gradient-to-t from-cyan-200 pb-14">
 
-<div className="pb-10">
+            <div className="pb-10">
                 <h3 className="font-extrabold text-center  text-5xl">Meet Our Specialist</h3>
                 <p className="text-center pt-2 text-xl">An introduction to your medical team, detailing their expertise and experience.</p>
             </div>
@@ -60,7 +74,7 @@ const Services = () => {
                 </div>
             </div>
 
-           
+
         </div>
     );
 };
