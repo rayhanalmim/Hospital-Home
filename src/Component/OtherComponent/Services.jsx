@@ -5,6 +5,7 @@ const Services = () => {
 
 <div className="pb-10">
                 <h3 className="font-extrabold text-center  text-5xl">Meet Our Specialist</h3>
+                <p className="text-center pt-2 text-xl">An introduction to your medical team, detailing their expertise and experience.</p>
             </div>
             <div className="grid grid-cols-4 justify-items-center gap-5 px-16">
                 <div className="card bg-base-100 shadow-xl">
